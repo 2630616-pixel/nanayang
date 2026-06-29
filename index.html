@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>간단한 투두앱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>투두</h1>
+    <section class="new-todo">
+      <input id="todo-input" placeholder="할 일을 입력하세요" autocomplete="off">
+      <button id="add-btn">추가</button>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <button class="filter active" data-filter="all">전체</button>
+        <button class="filter" data-filter="active">진행중</button>
+        <button class="filter" data-filter="completed">완료</button>
+      </div>
+      <button id="clear-completed">완료 삭제</button>
+    </section>
+
+    <ul id="todo-list" class="todos"></ul>
+
+    <footer class="footer">
+      <span id="count"></span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
